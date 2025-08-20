@@ -1,5 +1,9 @@
 # Dummy URI Handler Android App
 
+## My First Vibe Coding Experience:
+The background is that I was frustrated by many mindless apps that automatically redirect to WeChat Mini Programs. As someone with no Android development experience, I decided to create a functionless app that only registers itself as a handler for the `weixin://` URI scheme. This way, whenever any app tries to redirect to WeChat, a selection menu pops up to interrupt the automatic redirection.
+
+***
 This Android app registers itself to handle custom URI schemes starting with `weixin://`. It doesn't perform any complex functions but demonstrates how to register and handle custom URI intents.
 
 ## Features
@@ -96,12 +100,12 @@ The workflow file (`.github/workflows/build-apk.yml`) performs the following:
 
 1. **Triggers**: Runs on pushes to main/master branches, pull requests, and manual triggers
 2. **Environment**: Uses Ubuntu latest with JDK 17 and Android SDK
-3. **Build Process**: 
+3. **Build Process**:
    - Checks out the code
    - Sets up Java and Android environment
    - Makes gradlew executable
    - Builds the debug APK using `./gradlew assembleDebug`
-4. **Artifacts**: 
+4. **Artifacts**:
    - Uploads the built APK as a downloadable artifact
    - Creates a GitHub release with the APK on main branch pushes
 
